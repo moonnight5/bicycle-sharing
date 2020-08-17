@@ -1,0 +1,91 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class="container">
+  <view class="topNav">
+    <view class="getMine" bindtap="showContent">
+      <image src="../../image/mine.png"></image>
+    </view>
+    <view class="srh">
+      <input name="search" bindinput="getValue" placeholder="搜索" placeholder-style="color:#ffffff" value="{{value}}"></input>
+      <image bindtap="toSearch" src="../../image/search.png"></image>
+    </view>
+  </view>
+    <view class="key">
+      <van-popup
+      show="{{ isShow }}"
+      position="right"
+      custom-style="width: 70%; padding: 30rpx 30rpx 0; border-top-left-radius: 40rpx; border-bottom-left-radius: 40rpx; background-color: #ffffff"
+      overlay="{{overlay}}"
+      >
+        <scroll-view wx:for="{{suggest}}" wx:key="index">
+          <view bindtap="backfill" id="{{index}}" class="com">{{item.title}}</view>
+        </scroll-view>
+      </van-popup>
+    </view>
+  <view class="map">
+    <map id="myMap" markers="{{markers}}" bindmarkertap="getRoute" class="map" latitude="{{latitude}}" longitude="{{longitude}}" show-location="true" polyline="{{polyline}}"></map>
+  </view>
+  <van-popup
+  show="{{ show }}"
+  position="left"
+  custom-style="width: 72%; height: 100%; background-color: #ffffff"
+  bind:click-overlay="hideContent"
+  >
+    <view class="userInfo">
+      <view class="avatar">
+        <image src="{{avatarUrl}}"></image>
+        <text>{{name}}</text>
+      </view>
+      <view class="detail">
+        <view class="detailContent">
+          <view class="balance com" bindtap="toBalance">
+            <view class="flex">
+              <image src="../../image/balance.png"></image>
+              <text>账户余额</text>
+            </view>
+            <text>{{balance}}</text>
+          </view>
+          <view class="point com" bindtap="toPoint">
+            <view class="flex">
+              <image src="../../image/point.png"></image>
+              <text>我的积分</text>
+            </view>
+            <text>{{point}}</text>
+          </view>
+           <view class="recode com" bindtap="toRecode">
+            <view class="flex">
+              <image src="../../image/recode.png"></image>
+              <text>行程记录</text>
+            </view>
+            <text></text>
+          </view>
+          <view class="card com" bindtap="toCard">
+            <view class="flex">
+              <image src="../../image/card.png"></image>
+              <text>我的卡券</text>
+            </view>
+            <text></text>
+          </view>
+          <view class="share com">
+            <button class=".btn" hover-class="hoverBtn" open-type="share">
+              <view class="flex">
+                <image src="../../image/share.png"></image>
+                <text>邀请好友</text>
+              </view>
+              <text></text>
+            </button>
+          </view>
+          <view class="set com" bindtap="toSet">
+            <view class="flex">
+              <image src="../../image/set.png"></image>
+              <text>设置</text>
+            </view>
+            <text></text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </van-popup>
+  <view class="scan" bindtap="scan">
+    <image src="../../image/scan.png"></image>
+  </view>
+</view>

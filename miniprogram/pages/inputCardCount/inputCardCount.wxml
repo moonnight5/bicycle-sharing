@@ -1,0 +1,23 @@
+<!--miniprogram/pages/inputCardCount/inputCardCount.wxml-->
+<view class="container">
+	<view class="loginTitle"></view>
+	<view class="loginForm">
+		<form class="formGroup">
+			<view class="userName flex">
+				<input name="count" type="number" bindblur="getCount" placeholder="请输入购买数量" placeholder-style="color:#fff"></input>
+			</view>
+			<view wx:if="{{isShow}}" class="errMsg">
+        <text>请输入数量的正确形式</text>
+      </view>
+			<view class="btn">
+				<button bindtap="balanceBuy">余额购买</button>
+				<button bindtap="pointBuy">积分兑换</button>
+			</view>
+		</form>
+	</view>
+</view>
+<van-popup show="{{ isSuccess }}" custom-style="background-color: #74C3CA;border-radius: 26rpx;">
+	<view class="toast">
+		<text>{{errMsg}}</text>
+	</view>
+</van-popup>

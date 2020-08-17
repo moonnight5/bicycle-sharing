@@ -1,0 +1,4 @@
+<!--pages/save/save.wxml-->
+<view class="container">
+  <image bindtap="previewImage" src="cloud://yun20190429-wu3as.7975-yun20190429-wu3as-1259140285/getMoney.png"></image>
+</view>

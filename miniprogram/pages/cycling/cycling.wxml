@@ -1,0 +1,52 @@
+<view class="container">
+  <view class="map">
+    <map class="map" latitude="{{latitude}}" longitude="{{longitude}}" show-location="true"></map>
+  </view>
+  <view class="content">
+    <view class="count">
+      <view class="left">
+        <view class="recode">
+          <view class="num">
+            <text class="large">{{distance}}</text>
+            <text>km</text>
+          </view>
+          <view class="dec">
+            <text>行程</text>
+          </view>
+        </view>
+      </view>
+      <view class="right">
+        <view class="time com">
+          <view class="dec">
+            <text>耗时</text>
+          </view>
+          <view class="num">
+            <text class="mr">{{time}}</text>
+            <text>min</text>
+          </view>
+        </view>
+        <view class="energy com">
+          <view class="dec">
+            <text>耗能</text>
+          </view>
+          <view class="num">
+            <text class="mr">{{energy}}</text>
+            <text>k</text>
+          </view>
+        </view>
+        <view class="speed com">
+          <view class="dec">
+            <text>速度</text>
+          </view>
+          <view class="num">
+            <text class="mr">{{speed}}</text>
+            <text>km/min</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="over" bindtap="toPay">
+      <button>结束</button>
+    </view>
+  </view>
+</view>

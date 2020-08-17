@@ -1,0 +1,22 @@
+<!--pages/changeName/changeName.wxml-->
+<view class="container">
+	<view class="loginTitle"></view>
+	<view class="loginForm">
+		<form class="formGroup" bindsubmit="changeName">
+			<view class="userName flex">
+				<input name="name" placeholder="请输入用户名" placeholder-style="color:#fff"></input>
+			</view>
+			<view wx:if="{{isShow}}" class="errMsg">
+        <text>{{errMsg}}</text>
+      </view>
+			<view class="btn">
+				<button form-type="submit">确定</button>
+			</view>
+		</form>
+	</view>
+</view>
+<van-popup show="{{ isSuccess }}" custom-style="background-color: #74C3CA;border-radius: 26rpx;">
+	<view class="toast">
+		<text>修改成功</text>
+	</view>
+</van-popup>

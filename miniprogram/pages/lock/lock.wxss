@@ -1,0 +1,89 @@
+/* pages/lock/lock.wxss */
+.container {
+  /* background-image: url('http://view.jqueryfuns.com/2019/10/9/a9a16f16bb0b492de56a0fc1b6346f8d/images/login-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+  background-color: #f8eeee;
+}
+.content {
+  width: 94%;
+  height: 2000rpx;
+  position: relative;
+}
+.bicycle {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  animation: rideDrive 1.6s 0s linear forwards; 
+}
+@keyframes rideDrive{
+  0%{
+      transform: translate3d(0,0,0);
+  }
+  4%{
+      transform: translate3d(0,-1rpx,0);
+  }
+  8%{
+      transform: translate3d(0,0,0);
+  }
+  16%{
+      transform: translate3d(-40rpx,-1rpx,0);
+  }
+  24%{
+      transform: translate3d(-80rpx,0,0);
+  }
+  32%{
+      transform: translate3d(-120rpx,-1rpx,0);     
+  }
+  40%{
+      transform: translate3d(-160rpx,0,0);
+  }
+  48%{transform:translate3d(-200rpx,-1rpx,0rpx)
+  }
+  56%{transform:translate3d(-240rpx,0rpx,0rpx)
+  }
+  64%{transform:translate3d(-280rpx,-1rpx,0rpx)
+  }
+  72%{transform:translate3d(-320rpx,0rpx,0rpx)
+  }
+  80%{
+    transform:translate3d(-360rpx,-1rpx,0rpx)
+  }
+  88%{
+    transform:translate3d(-400rpx,0rpx,0rpx)
+  }
+  96%{
+    transform:translate3d(-440rpx,-1rpx,0rpx)
+  }
+  100%{
+    transform:translate3d(-480rpx,0rpx,0rpx)
+  }
+}
+.bicycle image {
+  width: 100rpx;
+  height: 100rpx;
+}
+.progressBar {
+  width: 80%;
+  height: 22rpx;
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  border: 2px solid gray;
+  border-radius: 14rpx;
+  overflow: hidden;
+}
+.progress {
+  height: 100%;
+  background-color: #74C3CA;
+  float: right;
+  transition: .1s;
+}
+.dec {
+  position: absolute;
+  left: 10%;
+  top: 22%;
+}
+.dec text {
+  color: #74C3CA;
+}

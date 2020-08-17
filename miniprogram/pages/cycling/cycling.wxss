@@ -1,0 +1,72 @@
+/* pages/lock/lock.wxss */
+.container {
+  height: 2000rpx;
+}
+.container .map {
+  width: 100%;
+  height: 100%;
+}
+.container .map map {
+  height: 100%;
+}
+.container .content {
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 32%;
+  padding-top: 40rpx;
+  border-top-left-radius: 14%;
+  border-top-right-radius: 14%;
+  background-color: #74C3CA;
+  color: #ffffff;
+}
+.content .count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 70%;
+}
+.content .count .left {
+  align-self: center;
+}
+.content .count .left .large {
+  font-size: 90rpx;
+  margin-right: 10rpx;
+}
+.content .count .left .dec {
+  margin-top: 10rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+.content .count .right {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+} 
+.content .count .right .com {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+  font-size: 34rpx;
+}
+.content .count .right .com .dec {
+  margin-right: 20rpx;
+  font-size: 40rpx;
+}
+.content .count .right .com .mr {
+  margin-right: 10rpx;
+  font-size: 38rpx;
+}
+.content .over {
+  font-size: 60rpx;
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid #B3DFE2;
+  border-radius: 46rpx;
+  overflow: hidden;
+  background-color: #B3DFE2;
+}
+.content .over button {
+  color: #ffffff;
+}

@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="box" bindtap="changeAvatar">
+    <view class="title">
+      <text>更换头像</text>
+    </view>
+    <view class="icon">
+      <image src="../../image/arrow.png"></image>
+    </view>
+  </view>
+  <view class="box" bindtap="changeName">
+    <view class="title">
+      <text>更改名称</text>
+    </view>
+    <view class="icon">
+      <image src="../../image/arrow.png"></image>
+    </view>
+  </view>
+  <view class="box" bindtap="changePassword">
+    <view class="title">
+      <text>更改密码</text>
+    </view>
+    <view class="icon">
+      <image src="../../image/arrow.png"></image>
+    </view>
+  </view>
+  <view class="box special" bindtap="exitLogin">
+    <view class="title">
+      <text>退出登录</text>
+    </view>
+  </view>
+</view>
+<van-popup show="{{ isSuccess }}" custom-style="background-color: #74C3CA;border-radius: 26rpx;">
+	<view class="toast">
+		<text>{{errMsg}}</text>
+	</view>
+</van-popup>

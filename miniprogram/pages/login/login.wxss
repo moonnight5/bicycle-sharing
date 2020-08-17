@@ -1,0 +1,126 @@
+/* pages/login/login.wxss */
+.container {
+  width: 100%;
+  height: 2000rpx;
+  background-image: url('http://view.jqueryfuns.com/2019/10/9/a9a16f16bb0b492de56a0fc1b6346f8d/images/login-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.loginTitle {
+  width: 96%;
+  height: 376rpx;
+  line-height: 610rpx;
+  font-size: xx-large;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.loginForm {
+  margin-top: 40rpx;
+  width: 80%;
+}
+.formGroup .flex {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+  padding: 0 4%;
+  height: 78rpx;
+  line-height: 78rpx;
+  border: 1px solid #B3DFE2;
+  border-radius: 46rpx;
+  background-color: #B3DFE2;
+}
+.formGroup .flex label image {
+  width: 64rpx;
+  height: 64rpx;
+}
+.formGroup .flex input {
+  margin-left: 10rpx;
+  height: 78rpx;
+  line-height: 78rpx;
+  font-size: 36rpx;
+}
+.formGroup .errMsg {
+  font-size: 26rpx;
+  color: red;
+}
+.formGroup .toRedict {
+  color: #2a6dba;
+  font-size: 24rpx;
+  padding-left: 56%;
+}
+.formGroup .btn {
+  margin: 40rpx auto 0;
+  width: 76%;
+  border: 1px solid #ffffff;
+  overflow: hidden;
+  border-radius: 46rpx;
+  background-color: #ffffff;
+}
+.formGroup .btn button {
+  color: #74C3CA;
+}
+.elseLogin {
+  width: 96%;
+  margin-top: 100rpx;
+  text-align: center;
+}
+.elseLogin .addLine {
+  text-align: center;
+  display: block;
+  position: relative;
+  width: 100%;
+  color: #ffffff;
+}
+.elseLogin .addLine::before {
+  content: '';
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  background: #ffffff;
+  width: 20%;
+  height: 1px;
+}
+.elseLogin .addLine::after {
+  content: '';
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  background: #ffffff;
+  width: 20%;
+  height: 1px;
+}
+.elseLogin .toLogin {
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+.toLogin .loginBtn {
+  display: flex;
+  flex-direction: column;
+}
+.btn-hover {
+  box-shadow: none;
+}
+.elseLogin .toLogin image {
+  width: 100rpx;
+  height: 100rpx;
+  align-self: center;
+}
+.elseLogin .toLogin text {
+  color: #ffffff;
+  font-size: 30rpx;
+}
+.toast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250rpx;
+  height: 150rpx;
+  font-size: 40rpx;
+  border-radius: 26rpx;
+  overflow: hidden;
+  color: #ffffff;
+  background-color: #74C3CA;
+}

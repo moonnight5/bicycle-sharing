@@ -1,0 +1,16 @@
+<!--pages/recode/recode.wxml-->
+<view class="container">
+  <view class="recodes" wx:if="{{isShow}}">
+    <view class="recode" >
+      <view class="recodeContent" wx:for="{{recode}}" wx:key="index">
+        <image src="cloud://yun20190429-wu3as.7975-yun20190429-wu3as-1259140285/98642.png"></image>
+        <text>{{item.distance}}km</text>
+        <text>{{item.time}}mim</text>
+        <text>{{item.energy}}k</text>
+      </view>
+    </view>
+  </view>
+  <view class="null" wx:else>
+    <text>当前记录空空如也</text>
+  </view>
+</view>

@@ -1,0 +1,202 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"appid": "wxece2f2880be72181",
+	"projectname": "bicycle-shareing",
+	"libVersion": "2.8.1",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/beforeLogin/beforeLogin",
+					"pathName": "pages/beforeLogin/beforeLogin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "pages/registe/registe",
+					"pathName": "pages/registe/registe",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "components/tabbar/tabbar",
+					"pathName": "components/tabbar/tabbar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lock/lock",
+					"pathName": "pages/lock/lock",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/register/register",
+					"pathName": "pages/register/register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/set/set",
+					"pathName": "pages/set/set",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/changeName/changeName",
+					"pathName": "pages/changeName/changeName",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/changeAvatar/changeAvatar",
+					"pathName": "pages/changeAvatar/changeAvatar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/changePassword/changePassword",
+					"pathName": "pages/changePassword/changePassword",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/balance/balance",
+					"pathName": "pages/balance/balance",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/buyCard/buyCard",
+					"pathName": "pages/buyCard/buyCard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 14,
+					"name": "pages/inputCardCount/inputCardCount",
+					"pathName": "pages/inputCardCount/inputCardCount",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/point/point",
+					"pathName": "pages/point/point",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/save/save",
+					"pathName": "pages/save/save",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cycling/cycling",
+					"pathName": "pages/cycling/cycling",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/account/account",
+					"pathName": "pages/account/account",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/pay/pay",
+					"pathName": "pages/pay/pay",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/recode/recode",
+					"pathName": "pages/recode/recode",
+					"scene": null
+				}
+			]
+		}
+	}
+}

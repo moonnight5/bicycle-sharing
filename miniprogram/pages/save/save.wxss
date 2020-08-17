@@ -1,0 +1,12 @@
+/* pages/save/save.wxss */
+.container {
+  width: 100%;
+}
+image {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%,-50%);
+  width: 550rpx;
+  height: 750rpx;
+}

@@ -1,0 +1,15 @@
+<!--miniprogram/pages/lock/lock.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="bicycle">
+      <image src="../../image/running-bicycle.jpg"></image>
+    </view>
+    <view class="progressBar">
+      <view class="progress" style="width:{{width}}%"></view>
+    </view>
+    <view class="dec">
+      <van-loading wx:if="{{isComplete}}" type="circular" color="#74C3CA;">解锁中...</van-loading>
+      <text wx:else>解锁完成</text>
+    </view>
+  </view>
+</view>

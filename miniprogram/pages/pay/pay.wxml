@@ -1,0 +1,14 @@
+<!--pages/pay/pay.wxml-->
+<view class="container">
+  <view class="balance">
+    <view class="showTitle">
+     <text>骑行{{time}}分,需支付</text>
+    </view>
+    <view class="showBalance">
+      <van-circle value="100" color="{{ gradientColor }}" text="{{balance}}" />
+    </view>
+  </view>
+  <view class="btn" bindtap="pay">
+    <button>支付</button>
+  </view>
+</view>

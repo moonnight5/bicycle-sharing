@@ -1,0 +1,28 @@
+<!--pages/point/point.wxml-->
+<view class="container">
+  <view class="balance">
+    <view class="showTitle">
+     <text>当前积分</text>
+     <text class="rule" bindtap="getRule">规则</text>
+    </view>
+    <view class="showBalance">
+      <van-circle value="100" color="{{ gradientColor }}" text="{{point}}" />
+    </view>
+  </view>
+  <view class="fun">
+    <view class="buyCard box" bindtap="toBuyCard">
+      <view class="title">
+        <text>兑换卡券</text>
+      </view>
+      <view class="icon">
+        <image src="../../image/arrow.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<van-popup show="{{ isSuccess }}" bind:click-overlay="hideRule" custom-style="background-color: #74C3CA;border-radius: 26rpx;">
+	<view class="toast">
+		<text>单次行程每30分</text>
+    <text>钟获得1积分</text>
+	</view>
+</van-popup>

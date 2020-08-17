@@ -1,0 +1,142 @@
+/* miniprogram/pages/index/index.wxss */
+.container {
+  height: 2000rpx;
+}
+.container .scan {
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  top: 84%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 50%;
+  background-color: #74C3CA;
+}
+.container .scan image {
+  width: 150rpx;
+  height: 150rpx;
+  align-self: center;
+}
+.topNav {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  width: 100%;
+  /* height: 5%; */
+  background-color: #74C3CA;
+}
+.getMine image {
+  width: 100rpx;
+  height: 100rpx;
+}
+.srh {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: space-around;
+  margin-left: 100rpx;
+  width: 68%;
+  border: 1px solid #B3DFE2;
+  border-radius: 46rpx;
+  overflow: hidden;
+  background-color: #B3DFE2;
+}
+.srh input{
+  height: 54rpx;
+}
+.srh image {
+  margin: auto 0;
+  width: 46rpx;
+  height: 46rpx;
+}
+.key {
+  z-index: 2;
+  position: absolute;
+  top: 120rpx;
+}
+.key .com{
+  margin-top: 10rpx;
+  border-bottom: 1px solid #f0f3f6;
+  height: 50rpx;
+}
+.map {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+.userInfo {
+  height: 100%;
+}
+.userInfo .avatar {
+  width: 100%;
+  height: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: #74C3CA;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+.userInfo .avatar image {
+  width: 160rpx;
+  height: 160rpx;
+  border: 1px solid #B3DFE2;
+  border-radius: 50%;
+  overflow: hidden;
+  align-self: center;
+}
+.userInfo .avatar text {
+  align-self: center;
+  margin-top: 10rpx;
+}
+.detailContent {
+  width: 96%;
+  margin: 100rpx auto 0;
+}
+.detailContent .com {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 28rpx;
+  margin-bottom: 40rpx;
+}
+.detailContent .share {
+  display: block;
+}
+.detailContent .set {
+  margin-top: 200rpx;
+}
+.detailContent .com .flex {
+  display: flex;
+  flex-direction: row;
+}
+.detailContent .com .flex text {
+  margin-left: 24rpx;
+}
+.detailContent image {
+  width: 50rpx;
+  height: 50rpx;
+  align-self: center;
+}
+.detailContent text {
+  align-self: center;
+}
+.btn {
+  border: none;
+  background-color: transparent;
+  outline: none; 
+  font-size: 28rpx;
+  margin-left: 48rpx;
+}
+.hoverBtn {
+  box-shadow: none;
+}

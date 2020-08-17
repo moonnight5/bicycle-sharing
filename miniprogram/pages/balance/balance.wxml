@@ -1,0 +1,29 @@
+<!--pages/balance/balance.wxml-->
+<view class="container">
+  <view class="balance">
+    <view class="showTitle">
+     <text>当前余额</text>
+    </view>
+    <view class="showBalance">
+      <van-circle value="100" color="{{ gradientColor }}" text="{{balance}}" />
+    </view>
+  </view>
+  <view class="fun">
+    <view class="save box" bindtap="toSave">
+      <view class="title">
+        <text>充值</text>
+      </view>
+      <view class="icon">
+        <image src="../../image/arrow.png"></image>
+      </view>
+    </view>
+    <view class="buyCard box" bindtap="toBuyCard">
+      <view class="title">
+        <text>购买卡券</text>
+      </view>
+      <view class="icon">
+        <image src="../../image/arrow.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,43 @@
+<view class="container">
+  <view class="loginTitle">欢迎登录</view>
+  <view class="loginForm">
+    <form class="formGroup" bindsubmit="login">
+      <view class="userName flex">
+        <label>
+          <image src="../../image/user.png"></image>
+        </label>
+        <input name="userName" placeholder="请输入用户名" placeholder-style="color:#fff"></input> 
+      </view>
+      <view class="password flex">
+        <label>
+          <image src="../../image/password.png"></image>
+        </label>
+        <input name="password" password="true" placeholder="请输入密码" placeholder-style="color:#fff"></input>
+      </view>
+      <view wx:if="{{isShow}}" class="errMsg">
+        <text>用户名或密码不正确</text>
+      </view>
+      <view class="toRedict">
+        <label bindtap="toRedict">还没有账号？点击注册</label>
+      </view>
+      <view class="btn">
+        <button form-type="submit">登录</button>
+      </view>
+    </form> 
+  </view>
+  <view class="elseLogin">
+    <text class="addLine">其他登录方式</text>
+    <view class="toLogin">
+      <button hover-class="btn-hover" class="loginBtn" open-type="getUserInfo" bindgetuserinfo="toLogin">   
+        <image src="../../image/wechat-login.png"></image>
+        <text>微信授权登录</text>
+      </button>
+    </view>
+  </view>
+</view>
+<van-popup show="{{ isSuccess }}" custom-style="background-color: #74C3CA;border-radius: 26rpx;">
+	<view class="toast">
+		<text>授权成功</text>
+		<text>请再次点击</text>
+	</view>
+</van-popup>

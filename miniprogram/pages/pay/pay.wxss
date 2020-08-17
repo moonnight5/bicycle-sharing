@@ -1,0 +1,35 @@
+/* pages/pay/pay.wxss */
+.container {
+  width: 100%;
+  height: 2000rpx;
+}
+.balance {
+  width: 100%;
+  height: 20%;
+  background-color: #74C3CA;
+  position: relative;
+}
+.balance .showTitle {
+  position: absolute;
+  left: 3%;
+  top: 3%;
+  font-size: 36rpx;
+}
+.balance .showBalance {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 60rpx;
+}
+.btn {
+  margin-top: 20rpx;
+  background-color: #74C3CA;
+  width: 68%;
+  /* color: #ffffff; */
+  overflow: hidden;
+  border-radius: 40rpx;
+}
+button {
+  color: #ffffff;
+}

@@ -1,0 +1,51 @@
+/* pages/balance/balance.wxss */
+.container {
+  width: 100%;
+  height: 2000rpx;
+}
+.balance {
+  width: 100%;
+  height: 20%;
+  background-color: #74C3CA;
+  position: relative;
+}
+.balance .showTitle {
+  position: absolute;
+  left: 3%;
+  top: 3%;
+  font-size: 36rpx;
+}
+.balance .showBalance {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 60rpx;
+}
+.fun {
+  width: 100%;
+  height: 70%;
+  margin-top: 10rpx;
+  background-color: #f0f3f6;
+}
+.fun .box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 106rpx;
+  margin-top: 10rpx;
+  background-color: #ffffff;
+  position: relative;
+}
+.fun .box .title {
+  align-self: center;
+  margin-left: 2%;
+  font-size: 36rpx;
+}
+.fun .box .icon image {
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  right: 2%;
+  color: #000000;
+}

@@ -1,0 +1,13 @@
+<!--pages/buyCard/buyCard.wxml-->
+<view class="container">
+  <view class="image">
+    <view class="month com" bindtap="inputMonthCount" data-day="month">
+      <image src="../../image/month.jpg"></image>
+      <text>当前拥有{{monthCard}}张</text>
+    </view>
+    <view class="week com" bindtap="inputWeekCount" data-day="week">
+      <image src="../../image/week.jpg"></image>
+      <text>当前拥有{{weekCard}}张</text>
+    </view>
+  </view>
+</view>
